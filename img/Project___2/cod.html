@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+rel="stylesheet">
+<title></title>
+<style type="text/css">
+*{
+    margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+Body
+{
+    font-family: sans-serif;
+}
+
+
+a:link,
+a:visited
+{
+text-decoration: none;
+}
+.modal
+{
+    background-color:rgba(0,0,0,.8);
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 10;
+opacity: 0;
+visibility:hidden;
+}
+.modal_content
+{
+width: 55%;
+height: 55%;
+background-color: #fff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 30px;
+border-radius: 1em;
+opacity: 0;
+visibility: hidden;
+}
+#modal:target{
+opacity: 1;
+visibility:visible;}
+#modal:target .modal content{
+opacity: 1;
+visibility: visible;
+}
+#m:target{
+opacity: 1;
+visibility:visible;
+}
+#m:target .modal content{
+opacity: 1;
+visibility: visible;
+}
+.modal_close{
+color: #363636;
+font-size: 30px;
+position: absolute;
+top: .1em;
+right: .5em;
+}
+.modal_heading{
+color: black;
+padding:.5em;
+margin-bottom: .1em;
+text-align: center;
+font-size: 40px;
+}
+.modal_heading1{
+color: black;
+margin-bottom: .5em;
+text-align: center;
+font-size: 22px;
+}
+.modal_close1{
+    color: #363636;
+font-size: 25px;
+position: absolute;
+top: 12em;
+right: 12em;
+text-transform: uppercase;
+}
+.modal content input[type="email"],input[type="text"]
+{ width:62%;
+margin-top: 1em;
+margin-left: 1em;
+position: relative;
+border:2px solid #000;
+outline:none;
+height:45px;
+color:#000;
+font-size:12px;
+border-radius:5px;
+}
+#head
+{
+height: 100px;
+margin-top: 5px;
+background-color:grey;
+}
+.btn{
+border: none;
+font-family:Comic Sans MS;
+font-size: 22px;
+font-style: italic;
+text-transform: uppercase;
+color: white;
+cursor: pointer;
+padding: 12px 30px;
+border-radius: 5px;
+}
+</style>
+</head>
+<body background="bg pic4.jpeg" >
+<h1 align="center">Thank you... Hope you like our services</h1>
+<a href="#modal"><button class="btn" style="width: 330px; margin-left: 520px;margin-top:200px;background-color: dodgerblue"><i class="fa fa-money" aria-hidden="true"> BUY NOW
+</i></button></a>
+<div class="modal" id="modal">
+<div class="modal content">
+<a href="#" class="modal close">&times;</a>
+<h1 class="modal heading">Download Your Logo</h1>
+<h5 class="modal heading1">Where should we send the design ?</h5>
+<form>
+<input type="email" id="email" name="email" placeholder="Enter email" required>
+<input type="text" name="address" placeholder="Enter address" required>
+<button class="btn" style="width: 200px;margin-left: 500px;background-color: red">submit <i
+class="fa fa-arrow-right" aria-hidden="true"></i></button>
+<a href="#" class="modal close1">no thanks</a>
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<script language="JavaScript">
+function check_pass()
+{if(document.getElementById('psw').value == document.getElementById('confirm_psw').value)
+{document.getElementById('submit').disabled = false;}
+else{document.getElementById('submit').disabled =true;}
+}
+</script>
+</head>
+<body background="depositphotos _111041050 -s tock-ill us trati on-warli-tri bal-art-8.j pg">
+<div class="register">
+<h2>My requirements</h2>
+<form>
+<label>Email:</label><br>
+<input type="email" name="email" placeholder="Enter email"><br>
+<label>Usage:</label><br>
+<input type="text" name="use" placeholder="Enter use of product"><br>
+<label>Type:</label><br>
+<input type="text" name="typ" placeholder="Entertype"><br>
+<label>Price:</label><br>
+<input type="number" name="price" placeholder="Enter price"><br>
+<label>Description:</label><br>
+<input type="text" name="desc" placeholder="Enter description"><br>
+<br>
+<input type="submit" name="submit" value="Submit" id="submit" >
+</form>
+</div>
+</body>
+</html>
